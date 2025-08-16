@@ -2,6 +2,9 @@
 #include <ctime>
 #include <iostream>
 #include <windows.h>
+#include "Game.h"
+
+
 
 
 // Konfiguration
@@ -138,7 +141,7 @@ std::uint32_t checkEnd(std::uint32_t playerPosition, std::uint32_t enemyPosition
 }
 
 // Hauptfunktion
-int main()
+int game()
 {
     bool playerTurn = true;
     while (true)
@@ -166,6 +169,8 @@ int main()
         playerJump = false;
         char input = getPlayerInput();
     }
+    
 
     return 0;
 }
+
