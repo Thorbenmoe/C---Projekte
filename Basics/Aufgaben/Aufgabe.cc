@@ -150,28 +150,21 @@ int init()
 {
     clearConsole();
     std::cout << "Welche Aufgabe ausführen?" << std::endl;
-
     std::int32_t welcheAufgabe;
     if (std::cin >> welcheAufgabe)
     {
         std::cout << "Ungültige Aufgabe." << std::endl;
     }
-
     switch (welcheAufgabe)
     {
     case 1:
         return aufgabeEins();
-
     case 2:
-
         return aufgabeZwei();
-
     case 3:
-
         return aufgabeDrei();
     default:
         return -1;
     }
-
     return 0;
 }
