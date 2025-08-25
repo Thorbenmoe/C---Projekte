@@ -65,7 +65,7 @@ int aufgabeEins()
 
     } while (counter < 10);
     
-    return counter = 0; // Reset des Zählers für zukünftige Aufrufe
+    return counter = 0; 
 }
 
 // -------------------------------------------------------------
