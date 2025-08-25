@@ -2,8 +2,7 @@
 #include <cstdint>
 #include <windows.h>
 
-// globale Variablen
-static std::uint32_t counter = 0;
+// constexpr (variabel wird schon zur Compile-Zeit ausgewertet)
 
 // -------------------------------------------------------------
 // Hilfsfunktion: Konsole leeren
@@ -34,6 +33,8 @@ void clearConsole()
 // -------------------------------------------------------------
 int aufgabeEins()
 {
+    
+    static std::uint32_t counter = 0;
     do
     {
         clearConsole();
@@ -55,7 +56,7 @@ int aufgabeEins()
         {
             std::cout << "Zähler: " << counter << std::endl;
             std::cout << "Die Eingabe ist gerade." << std::endl;
-            counter++;
+            ++counter;
         }
         else
         {
@@ -63,8 +64,8 @@ int aufgabeEins()
         }
 
     } while (counter < 10);
-
-    counter = 0; // Reset am Ende der Aufgabe
+    
+    return counter = 0; // Reset des Zählers für zukünftige Aufrufe
 }
 
 // -------------------------------------------------------------
@@ -106,7 +107,6 @@ int aufgabeZwei()
     return mod_cross_sum(eingabeI, eingabeJ);
 };
 
-
 // -------------------------------------------------------------
 // Aufgabe 3 Rekursive Funktion Fakultät
 // -------------------------------------------------------------
@@ -121,7 +121,6 @@ std::uint32_t rekursiv_function(std::uint32_t rekursiv_n)
         return rekursiv_n * rekursiv_function(rekursiv_n - 1); // Rekursiver Fall
     }
 }
-
 
 // -------------------------------------------------------------
 // Beispiel-Funktion: gerade / ungerade
