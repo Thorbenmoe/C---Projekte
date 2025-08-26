@@ -1,7 +1,10 @@
 #include <iostream>
-#include "ComputerGame1.h"
+#include "Arrays.h"
 
-int main() {
+int main()
+{
+
     init();
     return 0;
+   
 }

@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/thorb/Desktop/Programmierprojekte/C++/C---Projekte/Basics/Aufgaben",
-      "program": "c:/Users/thorb/Desktop/Programmierprojekte/C++/C---Projekte/Basics/Aufgaben/build/Debug/outDebug",
+      "cwd": "c:/Users/thorb/Desktop/Programmierprojekte/C++/C---Projekte/Basics/ComputerGame1",
+      "program": "c:/Users/thorb/Desktop/Programmierprojekte/C++/C---Projekte/Basics/ComputerGame1/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
