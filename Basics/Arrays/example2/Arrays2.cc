@@ -2,8 +2,6 @@
 #include <cstdint>
 #include <windows.h>
 
-
-
 // -------------------------------------------------------------
 // Hilfsfunktion: Konsole leeren
 // -------------------------------------------------------------
@@ -28,12 +26,18 @@ void clearConsole()
     SetConsoleCursorPosition(hConsole, homeCoords);
 }
 
-
 int init()
 {
     clearConsole();
-    std::cout << "Arrays\n\n";
+    constexpr std::uint32_t len = 4;
+    std::uint32_t array1[len] = {12, 32, 203, 14};
+    std::uint32_t reverseArray[len];
+    
+    for(std::uint32_t i =0; i < len; i++)
+    {
+        reverseArray[i]=array1[len-i-1];
+        std::cout << reverseArray[i] << std::endl;
+    }
+
     return 0;
 }
-
-  
