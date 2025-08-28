@@ -66,10 +66,10 @@ int printArray(int matrix_col_sum[])
 //--------------------------------------------------------------
 double dbl_array_sum(double dbl_array[], const std::size_t length)
 {
-    for (int i = 0; i < length; i++)
+    for (int i = 0; i <= length; i++)
     {
        
-        
+
             dbl_array[i]=dbl_array[i]+i;
             dbl_array[i]=dbl_array[i]+dbl_array[i-1];
             std::cout << dbl_array[i] << "\n";
@@ -90,11 +90,11 @@ int init()
     // 3 Zeilen 2 Spalten
 
     int matrix1[num_rows][num_cols] = {1, 2, 3, 4, 5, 6};
-    double dbl_array[99];
+    std::array<double,100> dbl_array ={};
     int matrix_col_sum[num_cols] = {};
 
     arraysum(matrix1, matrix_col_sum);
-    dbl_array_sum(dbl_array,99);
+    dbl_array_sum(dbl_array.data(),100);
     printArray(matrix_col_sum);
 
     return 0;
