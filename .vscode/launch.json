@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/thorb/Desktop/Programmierprojekte/C++/C---Projekte/Basics/Arrays/example2",
-      "program": "c:/Users/thorb/Desktop/Programmierprojekte/C++/C---Projekte/Basics/Arrays/example2/build/Debug/outDebug",
+      "cwd": "c:/Users/thorb/Desktop/Programmierprojekte/C++/C---Projekte/Basics/Pointer",
+      "program": "c:/Users/thorb/Desktop/Programmierprojekte/C++/C---Projekte/Basics/Pointer/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
