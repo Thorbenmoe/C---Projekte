@@ -1,16 +1,23 @@
 #include <iostream>
 #include <cstdint>
-#include <windows.h>
-#include <array>
-
 
 //& Memory Adress
 //*p Wert der Memory Adress
 int init()
-{   
+{
 
-    int num =5;
-    int* p= &num;
-    std::cout <<"Test " << p<< "\n";
+    auto *p = new std::int32_t{4};
+
+    if (p != nullptr)
+    {
+        std::cout << p << "\n";
+        std::cout << *p << "\n";
+    }
+    else
+    {
+        delete p;
+        p = nullptr;
+    }
+
     return 0;
 }
