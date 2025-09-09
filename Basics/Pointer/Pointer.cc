@@ -1,23 +1,17 @@
 #include <iostream>
 #include <cstdint>
 
-//& Memory Adress
-//*p Wert der Memory Adress
-int init()
+void f(int v)
+{   //intv !=a   beides sind eigenstädnige variabeln auf einen eigenstädnigen speicher und es wird lediglich eine ,,Kopie" erstellt
+    std::cout <<&v << std::endl;
+}
+
+int main()
 {
-
-    auto *p = new std::int32_t{4};
-
-    if (p != nullptr)
-    {
-        std::cout << p << "\n";
-        std::cout << *p << "\n";
-    }
-    else
-    {
-        delete p;
-        p = nullptr;
-    }
+   
+    int a= 2;
+    std::cout << &a << std::endl;
+    f(a); 
 
     return 0;
 }
